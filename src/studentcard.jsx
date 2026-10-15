@@ -1,5 +1,6 @@
 function StudentCard() {
   const etudiant = {
+
     nom: "Ben Attia",
     prenom: "yassine",
     email: "yasinebenatia1@gmail.com",
@@ -8,7 +9,6 @@ function StudentCard() {
     anneeEtude: "2ème année",
     groupe: "Groupe B",
     ville: "mahdia",
-    // Vous pouvez remplacer ce lien par l'URL de votre image ou le chemin d'une image locale (ex: "/mon-image.jpg")
     photoUrl: "https://via.placeholder.com/150" 
   };
 
@@ -18,7 +18,7 @@ function StudentCard() {
 
   return (
     <div>
-      {/* Image affichée en haut de la fiche */}
+    
       <img 
         src="img1.jpg" 
         alt={`Photo de ${etudiant.prenom} ${etudiant.nom}`} 
@@ -34,8 +34,6 @@ function StudentCard() {
       <p><strong>Année d'étude :</strong> {etudiant.anneeEtude}</p>
       <p><strong>Groupe :</strong> {etudiant.groupe}</p>
       <p><strong>Ville :</strong> {etudiant.ville}</p>
-
-      {/* Bouton pour contacter l'étudiant */}
       <button onClick={meContacter}>Contactez-moi</button>
     </div>
   );
